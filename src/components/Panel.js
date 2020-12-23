@@ -63,20 +63,19 @@ function Panel() {
 
   return (
       <>
-        <h4>{title}</h4>
+        <div className="SubPanel">
+          {
+            titles.map( (title,index) => (
+              <h4 onClick={()=>{
+                setIndex(index);
+                setTitle(title)
+              }}>
+                {title}
+              </h4>
+            ))
+          }
+        </div>
         <div className="Panel">
-          <div className="SubPanel">
-            {
-              titles.map( (title,index) => (
-                <h5 onClick={()=>{
-                  setIndex(index);
-                  setTitle(title)
-                }}>
-                  {title}
-                </h5>
-              ))
-            }
-          </div>
           {panels[index]}
         </div>
       </>
