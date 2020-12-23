@@ -23,7 +23,7 @@ function Project(props){
     <div className="SubPanel">
       <h5>{titles[props.it]}</h5> 
       <p>
-        {text[props.it]}
+        {text[props.it]} <br />
         <a href={links[props.it]}>
           Link
         </a>
