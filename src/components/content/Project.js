@@ -12,6 +12,11 @@ const titles = [
 "Lunar 2",
 "This site",
 ]
+const links = [
+"https://github.com/borix134/FullStackBootcampKU",
+"https://github.com/borix134/Lunar-2",
+"https://github.com/borix134/Portfolio",
+]
 
 function Project(props){ 
   return (
@@ -19,6 +24,9 @@ function Project(props){
       <h5>{titles[props.it]}</h5> 
       <p>
         {text[props.it]}
+        <a href={links[props.it]}>
+          Link
+        </a>
       </p>
     </div>
   );

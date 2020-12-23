@@ -22,7 +22,17 @@ function firstPanel(){
 }
 
 function secondPanel(){
-  return <></>;
+  var Projects = [];
+  
+  for (var i=0; i < 3; i++) {
+    Projects.push(<Project it={i}/>);
+  }
+
+  return (
+    <>
+      {Projects}
+    </>
+  );
 }
 
 function thirdPanel(){
