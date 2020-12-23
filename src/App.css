@@ -61,3 +61,12 @@ h2, h3, h4, h5, ul {
   max-width: 240px;
   max-height: 240px;
 }
+
+block {
+  animation: blink-caret 1s step-end infinite; 
+}
+
+@keyframes blink-caret {
+  from, to { color: transparent }
+  50% { color: #3C3C3C; }
+}

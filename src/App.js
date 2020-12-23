@@ -11,7 +11,7 @@ function App() {
       </header>
       <body>
         <h2>
-          Nick Panagakis
+          Nick Panagakis <block>█</block>
         </h2>
         <h3>
           Web Development
