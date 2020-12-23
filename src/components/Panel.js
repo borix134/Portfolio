@@ -42,7 +42,7 @@ function thirdPanel(){
 
 function fourthPanel(){
   var Places = [];
-  
+
   for (var i=0; i < 3; i++) {
     Places.push(<Place it={i}/>);
   }
@@ -65,9 +65,16 @@ function Panel() {
       <>
         <div className="SubPanel">
           {
-            titles.map( (title,index) => (
+            titles.map( (title,i) => (
+              index != i ? 
+              <h5 onClick={()=>{
+                setIndex(i);
+                setTitle(title)
+              }}>
+                {title}
+              </h5> :
               <h4 onClick={()=>{
-                setIndex(index);
+                setIndex(i);
                 setTitle(title)
               }}>
                 {title}
