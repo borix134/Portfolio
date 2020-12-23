@@ -4,6 +4,7 @@ import Stack from './content/Stack';
 import Desktop from './content/Desktop';
 import Thing from './content/Thing';
 import Project from './content/Project';
+import Place from './content/Place';
 import me from './me.jpeg';
 
 function firstPanel(){
@@ -39,8 +40,22 @@ function thirdPanel(){
   return <><Stack /><Desktop /></>;
 }
 
+function fourthPanel(){
+  var Places = [];
+  
+  for (var i=0; i < 3; i++) {
+    Places.push(<Place it={i}/>);
+  }
+
+  return (
+    <>
+      {Places}
+    </>
+  );
+}
+
 const titles = ["/home/nick","Projects","Technicalities","Find me on"];
-const panels = [firstPanel(), secondPanel(), thirdPanel()];
+const panels = [firstPanel(), secondPanel(), thirdPanel(), fourthPanel()];
 
 function Panel() {
   const [index, setIndex] = useState(0);
