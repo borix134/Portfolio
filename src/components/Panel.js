@@ -7,59 +7,30 @@ import Project from './content/Project';
 import Place from './content/Place';
 import me from './me.jpeg';
 
-function firstPanel(){
-  var Things = [];
-  
-  for (var i=0; i < 4; i++) {
-    Things.push(<Thing it={i}/>);
-  }
-
-  return (
-    <>
-      {Things}
-      <img src={me} id="me" />
-    </>
-  );
-}
-
-function secondPanel(){
-  var Projects = [];
-  
-  for (var i=0; i < 3; i++) {
-    Projects.push(<Project it={i}/>);
-  }
-
-  return (
-    <>
-      {Projects}
-    </>
-  );
-}
-
-function thirdPanel(){
-  return <><Stack /><Desktop /></>;
-}
-
-function fourthPanel(){
-  var Places = [];
-
-  for (var i=0; i < 3; i++) {
-    Places.push(<Place it={i}/>);
-  }
-
-  return (
-    <>
-      {Places}
-    </>
-  );
-}
-
 const titles = ["/home/nick","Projects","Technicalities","Find me on"];
-const panels = [firstPanel(), secondPanel(), thirdPanel(), fourthPanel()];
 
 function Panel() {
   const [index, setIndex] = useState(0);
   const [title, setTitle] = useState(titles[index]);
+
+  var panels = [];
+  var things = [];
+  var projects = [];
+  var places = [];
+  
+  for (var i=0; i < 4; i++) {
+    things.push(<Thing it={i}/>);
+  }
+ 
+  for (var i=0; i < 3; i++) {
+    projects.push(<Project it={i}/>);
+    places.push(<Place it={i}/>);
+  }
+
+  panels.push(<>{things}<img src={me} id="me" /></>);
+  panels.push(<>{projects}</>);
+  panels.push(<><Stack /><Desktop /></>);
+  panels.push(<>{places}</>);
 
   return (
       <>

@@ -13,7 +13,7 @@ const titles = [
 const links = [
 "https://github.com/borix134",
 "https://www.linkedin.com/in/nickpanagakis/",
-"https://bbs.archlinux.org/search.php?search_id=772013391",
+"https://bbs.archlinux.org/profile.php?id=104367",
 ]
 
 function Place(props){ 
