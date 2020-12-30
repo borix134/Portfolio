@@ -5,7 +5,7 @@ const text = [
 and full-stack related projects. All finished work is a part of a collection.",
 "Lunar 2 is a game engine written in C++ that allows for the development of \
 simple videogames in the Lua interpereted language.",
-"This site, a project on it's own is hosted on Github and Heroku." 
+"This site, a project on its own is hosted on Github and Heroku." 
 ]
 const titles = [
 "Kansas Unviersity Projects",

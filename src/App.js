@@ -15,7 +15,7 @@ function App() {
           Nick Panagakis 
         </h2>
         <h3>
-          Web Development<block>█</block>
+          Web Development<span className="block">█</span>
         </h3>
         <Panel></Panel>
     </div>

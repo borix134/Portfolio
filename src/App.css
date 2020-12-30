@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5f5;;
+  background-color: #f5f5f5;
   color: #3C3C3C;
   font-family: 'Sunflower', sans-serif;
   font-size: 16px;
@@ -62,7 +62,7 @@ h2, h3, h4, h5, ul {
   max-height: 240px;
 }
 
-block {
+.block {
   animation: blink-caret 1s step-end infinite; 
 }
 
