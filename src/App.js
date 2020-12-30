@@ -3,10 +3,6 @@ import Panel from './components/Panel';
 import { useEffect } from 'react';
 
 function App() {
-  useEffect(() => {
-     document.title = "Nicholas P"
-  }, []);
-
   return (
     <div className="App">
       <link rel="preconnect" href="https://fonts.gstatic.com" />
