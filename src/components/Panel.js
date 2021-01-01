@@ -7,7 +7,7 @@ import Project from './content/Project';
 import Place from './content/Place';
 import me from './me.jpeg';
 
-const titles = ["/home/nick","Projects","Technicalities","Find me on"];
+const titles = ["/home/nick","My Projects","My Tools","Find me on"];
 
 function Panel() {
   const [index, setIndex] = useState(0);

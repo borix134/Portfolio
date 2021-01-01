@@ -2,8 +2,8 @@ import '../../App.css';
 
 const text = [
 "I publish and maintain code on Github.",
-"I have a presence on LinkedIn.",
-"I semi-frequent the Arch Linux forums.",
+"I have a presence on LinkedIn. (Link requires login)",
+"I semi-frequent the Arch Linux forums. (Link requires login)",
 ]
 const titles = [
 "Github",
